@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  
+  .jumbotron
+    .container
+      h1 Avishkar Pratap KC
+      p This is a home page
+      a.btn.btn-primary.btn-lg(href='/contact') Learn More &raquo;
+
+  .container
+    .row
+      .col-md-4
+        h2 About Us
+        p If you like to know about us, You can visit us.
+        a.btn.btn-default(href='/about') View Details
+
+      .col-md-4
+        h2 Services
+        p These are the services provided by us.
+        a.btn.btn-success(href='#') View Details
+        
+      .col-md-4
+        h2 Get in Touch
+        p If you want to get in touch with us then please feel free to contact us
+        a.btn.btn-primary(href='/contact') View Details
